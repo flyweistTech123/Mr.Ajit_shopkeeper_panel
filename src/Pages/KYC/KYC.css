@@ -6,7 +6,6 @@
 .kyc1 {
   width: 88px;
   height: auto;
-  /* padding: 8px 16px 8px 16px; */
   padding: 8px;
   border-radius: 9px;
   font-family: "Lexend", sans-serif;
@@ -72,7 +71,7 @@
 }
 
 .kyc5 button:nth-child(1) {
-  width: auto;
+  width: 126px;
   height: auto;
   padding: 9.88px 10.53px 9.88px 10.53px;
   border-radius: 6.58px;
@@ -90,11 +89,11 @@
 }
 
 .kyc5 button:nth-child(2) {
-  width: auto;
+  width: 126px;
   height: auto;
   padding: 9.88px 10.53px 9.88px 10.53px;
   border-radius: 6.58px;
-  border: 1px solid #ffa500;
+  border: 1px solid #2E4658;
   outline: none;
   font-family: "Mulish", sans-serif;
   font-size: 12px;
@@ -103,6 +102,6 @@
   color: #ffffff;
   letter-spacing: 0.2px;
   margin: 0;
-  background-color: #ffa500;
+  background-color: #2E4658;
   cursor: pointer;
 }

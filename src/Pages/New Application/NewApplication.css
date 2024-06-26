@@ -1,0 +1,108 @@
+.newapplication {
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 6px 6px 54px 0px #0000000d;
+  padding: 32px;
+  border-radius: 14px;
+}
+
+
+.newapplication1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20%;
+}
+
+
+.newapplication2{
+    width: 300px;
+    height: 277px;
+}
+
+.newapplication3 {
+    text-align: center;
+}
+
+.newapplication3 h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #000000;
+  margin: 0;
+}
+
+.newapplication4 {
+    margin-top: 20px;
+}
+
+.newapplication4 input {
+  width: 100%;
+  height: 41px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+  outline: none;
+}
+
+.newapplication4 input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: #0000004a;
+  margin: 0;
+  text-align: center;
+}
+
+.newapplication5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.newapplication5 input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 7px;
+  background: #ffffff;
+  border: 1px solid #000000;
+}
+
+.newapplication5 label {
+  font-family: "DM Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12.32px;
+  color: #000000;
+  margin: 0;
+}
+
+
+.newapplication6{
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.newapplication6  button{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 10px;
+    background: #2E4658;
+    border: 1px solid #2E4658;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0;
+    cursor: pointer;
+}

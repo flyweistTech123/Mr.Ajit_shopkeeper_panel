@@ -1,55 +1,53 @@
 import React from 'react'
-import './FraudCustomer.css'
+import './AddProduct.css'
 import HOC from '../../Components/HOC/HOC'
 import { useNavigate } from 'react-router-dom';
+
 
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosSearch } from "react-icons/io";
 import { MdRemoveRedEye } from "react-icons/md";
+import { IoMdAdd } from "react-icons/io";
 
 
-const FraudCustomer = () => {
+const ProductList = () => {
     const navigate = useNavigate()
     const tabledata = [
         {
             id: 1,
-            LoanID: 'KRT1420',
-            CustomerName: "John Doe",
-            Product: "VIVO",
-            MobileNumber: "854695235",
-            LoanAmount: "25000",
-            PendingAmount: "15000",
-            LeftDaysCount: "3 Months",
+            ReleaseDate: '13-05-2024',
+            ProductID: "#14001",
+            IMEINo: "234587514563258",
+            ProductName: "John Doe",
+            CompanyName: "Xiaomi",
+            Price: "29874",
         },
         {
             id: 2,
-            LoanID: 'KRT1420',
-            CustomerName: "John Doe",
-            Product: "VIVO",
-            MobileNumber: "854695235",
-            LoanAmount: "25000",
-            PendingAmount: "15000",
-            LeftDaysCount: "3 Months",
+            ReleaseDate: '13-05-2024',
+            ProductID: "#14001",
+            IMEINo: "234587514563258",
+            ProductName: "John Doe",
+            CompanyName: "Xiaomi",
+            Price: "29874",
         },
         {
             id: 3,
-            LoanID: 'KRT1420',
-            CustomerName: "John Doe",
-            Product: "VIVO",
-            MobileNumber: "854695235",
-            LoanAmount: "25000",
-            PendingAmount: "15000",
-            LeftDaysCount: "3 Months",
+            ReleaseDate: '13-05-2024',
+            ProductID: "#14001",
+            IMEINo: "234587514563258",
+            ProductName: "John Doe",
+            CompanyName: "Xiaomi",
+            Price: "29874",
         },
         {
             id: 4,
-            LoanID: 'KRT1420',
-            CustomerName: "John Doe",
-            Product: "VIVO",
-            MobileNumber: "854695235",
-            LoanAmount: "25000",
-            PendingAmount: "15000",
-            LeftDaysCount: "3 Months",
+            ReleaseDate: '13-05-2024',
+            ProductID: "#14001",
+            IMEINo: "234587514563258",
+            ProductName: "John Doe",
+            CompanyName: "Xiaomi",
+            Price: "29874",
         }
     ]
     return (
@@ -60,7 +58,7 @@ const FraudCustomer = () => {
                         <div className='totalusers4'>
                             <div className='totalusers5'>
                                 <IoIosArrowBack color='#202224' size={25} onClick={() => navigate(-1)} />
-                                <h6>Fraud Customer List Report</h6>
+                                <h6>Product List</h6>
                             </div>
                             <div className='totalusers6'>
                                 <div className='totalusers7'>
@@ -72,6 +70,10 @@ const FraudCustomer = () => {
                                         <option value="">Filter</option>
                                     </select>
                                 </div>
+                                <div className='productlist' onClick={() => navigate('/addproduct')}>
+                                    <IoMdAdd color='#FFFFFF' size={20} />
+                                    <p>Add Product</p>
+                                </div>
                             </div>
                         </div>
 
@@ -81,27 +83,25 @@ const FraudCustomer = () => {
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>Loan ID</th>
-                                            <th>Customer Name</th>
-                                            <th>Product</th>
-                                            <th>Mobile Number</th>
-                                            <th>Loan Amount</th>
-                                            <th>Pending Amount</th>
-                                            <th>Left Days Count</th>
+                                            <th>Release Date</th>
+                                            <th>Product ID</th>
+                                            <th>IMEI No.</th>
+                                            <th>Product Name</th>
+                                            <th>Company Name</th>
+                                            <th>Price</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         {tabledata.map((data) => (
                                             <tr key={data.id}>
-                                                <td>{data.LoanID}</td>
-                                                <td>{data.CustomerName}</td>
-                                                <td>{data.Product}</td>
-                                                <td>{data.MobileNumber}</td>
-                                                <td>{data.LoanAmount}</td>
-                                                <td>{data.PendingAmount}</td>
-                                                <td>{data.LeftDaysCount}</td>
-                                                <td className='totalusers11'><MdRemoveRedEye color='#1C1B1F' size={20} onClick={() => navigate('/frauduser_Detail')} /></td>
+                                                <td>{data.ReleaseDate}</td>
+                                                <td>{data.ProductID}</td>
+                                                <td>{data.IMEINo}</td>
+                                                <td>{data.ProductName}</td>
+                                                <td>{data.CompanyName}</td>
+                                                <td>{data.Price}</td>
+                                                <td><MdRemoveRedEye color='#1C1B1F' size={20} /></td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -116,4 +116,4 @@ const FraudCustomer = () => {
     )
 }
 
-export default HOC(FraudCustomer)
+export default HOC(ProductList)

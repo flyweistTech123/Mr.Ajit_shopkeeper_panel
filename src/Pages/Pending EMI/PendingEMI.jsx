@@ -1,5 +1,5 @@
 import React from 'react'
-import './FraudCustomer.css'
+import './PendingEMI.css'
 import HOC from '../../Components/HOC/HOC'
 import { useNavigate } from 'react-router-dom';
 
@@ -8,48 +8,89 @@ import { IoIosSearch } from "react-icons/io";
 import { MdRemoveRedEye } from "react-icons/md";
 
 
-const FraudCustomer = () => {
+const PendingEMI = () => {
     const navigate = useNavigate()
     const tabledata = [
         {
             id: 1,
             LoanID: 'KRT1420',
-            CustomerName: "John Doe",
-            Product: "VIVO",
-            MobileNumber: "854695235",
-            LoanAmount: "25000",
-            PendingAmount: "15000",
-            LeftDaysCount: "3 Months",
+            CustomerName: "John Due",
+            EMIAmount: "58600",
+            PenaltyAmount: "8000",
+            DatePayment: '05-05-2024',
+            LeftDaysCount: '08',
+            MobileNumber: '9254856322',
         },
         {
             id: 2,
             LoanID: 'KRT1420',
-            CustomerName: "John Doe",
-            Product: "VIVO",
-            MobileNumber: "854695235",
-            LoanAmount: "25000",
-            PendingAmount: "15000",
-            LeftDaysCount: "3 Months",
+            CustomerName: "John Due",
+            EMIAmount: "58600",
+            PenaltyAmount: "8000",
+            DatePayment: '05-05-2024',
+            LeftDaysCount: '08',
+            MobileNumber: '9254856322',
         },
         {
             id: 3,
             LoanID: 'KRT1420',
-            CustomerName: "John Doe",
-            Product: "VIVO",
-            MobileNumber: "854695235",
-            LoanAmount: "25000",
-            PendingAmount: "15000",
-            LeftDaysCount: "3 Months",
+            CustomerName: "John Due",
+            EMIAmount: "58600",
+            PenaltyAmount: "8000",
+            DatePayment: '05-05-2024',
+            LeftDaysCount: '08',
+            MobileNumber: '9254856322',
         },
         {
             id: 4,
             LoanID: 'KRT1420',
-            CustomerName: "John Doe",
-            Product: "VIVO",
-            MobileNumber: "854695235",
-            LoanAmount: "25000",
-            PendingAmount: "15000",
-            LeftDaysCount: "3 Months",
+            CustomerName: "John Due",
+            EMIAmount: "58600",
+            PenaltyAmount: "8000",
+            DatePayment: '05-05-2024',
+            LeftDaysCount: '08',
+            MobileNumber: '9254856322',
+        },
+
+        {
+            id: 5,
+            LoanID: 'KRT1420',
+            CustomerName: "John Due",
+            EMIAmount: "58600",
+            PenaltyAmount: "8000",
+            DatePayment: '05-05-2024',
+            LeftDaysCount: '08',
+            MobileNumber: '9254856322',
+        },
+        {
+            id: 6,
+            LoanID: 'KRT1420',
+            CustomerName: "John Due",
+            EMIAmount: "58600",
+            PenaltyAmount: "8000",
+            DatePayment: '05-05-2024',
+            LeftDaysCount: '08',
+            MobileNumber: '9254856322',
+        },
+        {
+            id: 7,
+            LoanID: 'KRT1420',
+            CustomerName: "John Due",
+            EMIAmount: "58600",
+            PenaltyAmount: "8000",
+            DatePayment: '05-05-2024',
+            LeftDaysCount: '08',
+            MobileNumber: '9254856322',
+        },
+        {
+            id: 8,
+            LoanID: 'KRT1420',
+            CustomerName: "John Due",
+            EMIAmount: "58600",
+            PenaltyAmount: "8000",
+            DatePayment: '05-05-2024',
+            LeftDaysCount: '08',
+            MobileNumber: '9254856322',
         }
     ]
     return (
@@ -60,7 +101,7 @@ const FraudCustomer = () => {
                         <div className='totalusers4'>
                             <div className='totalusers5'>
                                 <IoIosArrowBack color='#202224' size={25} onClick={() => navigate(-1)} />
-                                <h6>Fraud Customer List Report</h6>
+                                <h6>Pending EMI’s</h6>
                             </div>
                             <div className='totalusers6'>
                                 <div className='totalusers7'>
@@ -83,11 +124,11 @@ const FraudCustomer = () => {
                                         <tr>
                                             <th>Loan ID</th>
                                             <th>Customer Name</th>
-                                            <th>Product</th>
-                                            <th>Mobile Number</th>
-                                            <th>Loan Amount</th>
-                                            <th>Pending Amount</th>
+                                            <th>EMI Amount</th>
+                                            <th>Penalty Amount</th>
+                                            <th>Date of Payment</th>
                                             <th>Left Days Count</th>
+                                            <th>Mobile Number</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -96,12 +137,12 @@ const FraudCustomer = () => {
                                             <tr key={data.id}>
                                                 <td>{data.LoanID}</td>
                                                 <td>{data.CustomerName}</td>
-                                                <td>{data.Product}</td>
-                                                <td>{data.MobileNumber}</td>
-                                                <td>{data.LoanAmount}</td>
-                                                <td>{data.PendingAmount}</td>
+                                                <td>{data.EMIAmount}</td>
+                                                <td>{data.PenaltyAmount}</td>
+                                                <td>{data.DatePayment}</td>
                                                 <td>{data.LeftDaysCount}</td>
-                                                <td className='totalusers11'><MdRemoveRedEye color='#1C1B1F' size={20} onClick={() => navigate('/frauduser_Detail')} /></td>
+                                                <td>{data.MobileNumber}</td>
+                                                <td className='totalusers11'><MdRemoveRedEye color='#1C1B1F' size={20} onClick={() => navigate('/userdetail')} /></td>
                                             </tr>
                                         ))}
                                     </tbody>
@@ -116,4 +157,4 @@ const FraudCustomer = () => {
     )
 }
 
-export default HOC(FraudCustomer)
+export default HOC(PendingEMI)

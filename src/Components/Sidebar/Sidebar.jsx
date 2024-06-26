@@ -27,22 +27,22 @@ const Sidebar = ({ toggleSidebar }) => {
         },
         {
             text: 'New Application',
-            link: '/users',
+            link: '/newapplication',
             icon: <LuUser2 size={23} />
         },
         {
             text: 'EMI Collection',
-            link: '/kyc',
+            link: '/emicollection',
             icon: <PiCalculator size={23} />
         },
         {
             text: 'Release Loan',
-            link: '/payment',
+            link: '/users',
             icon: <MdPayment size={23} />
         },
         {
             text: 'Add Product',
-            link: '/wallet',
+            link: '/addproduct',
             icon: <AiOutlineProduct size={23} />
         },
         {
@@ -52,22 +52,22 @@ const Sidebar = ({ toggleSidebar }) => {
         },
         {
             text: 'Pending EMI',
-            link: '/fraud_customer',
+            link: '/pendingemi',
             icon: <FaChartBar size={23} />
         },
         {
             text: 'Wallet',
-            link: '/settings',
+            link: '/wallet',
             icon: <LuWallet size={23} />
         },
         {
             text: 'Fraud Customers',
-            link: '/settings',
+            link: '/fraud_customer',
             icon: <LuUser2 size={23} />
         },
         {
             text: 'Staff Create ID',
-            link: '/settings',
+            link: '/createstaffID',
             icon: <LuUser2 size={23} />
         },
         {
