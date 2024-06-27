@@ -30,13 +30,18 @@ const EMICollection = () => {
                                 <label htmlFor="">Select type</label>
                                 <select name="" id="">
                                     <option value="">Application ID</option>
+                                    <option value="">1 EMI</option>
+                                    <option value="">2 EMI</option>
+                                    <option value="">3 EMI</option>
+                                    <option value="">4 EMI</option>
+                                    <option value="">5 EMI</option>
                                 </select>
                             </div>
                             <div className='emicollection2'>
                                 <label htmlFor="">IMEI Number</label>
                                 <div className='emicollection3'>
                                     <input type="search" placeholder='25314526897425' />
-                                    <IoSearch color='#9AA3AF'/>
+                                    <IoSearch color='#9AA3AF' />
                                 </div>
                             </div>
                         </div>

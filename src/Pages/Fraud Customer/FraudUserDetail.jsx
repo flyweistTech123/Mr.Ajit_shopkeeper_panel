@@ -117,7 +117,7 @@ const FraudUserDetail = () => {
                                 </div>
                             </div>
                             <div className='userdetails6'>
-                                <button>Download Report</button>
+                                <button style={{backgroundColor:"#00f076"}}>Download Report</button>
                             </div>
                         </div>
 

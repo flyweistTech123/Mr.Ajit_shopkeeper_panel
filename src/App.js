@@ -29,6 +29,13 @@ import KYCDetails from './Pages/KYC/KYCDetails';
 import Walletmamagement from './Pages/Wallet/Walletmamagement';
 import Shopkeeperreportdetails from './Pages/Shopkeeper Report/Shopkeeperreportdetails';
 import CreateID from './Pages/KYC/CreateID';
+import VerifyOtp from './Pages/New Application/VerifyOtp';
+import NewApplicationForm from './Pages/New Application/NewApplicationForm';
+import ApplicationFirstForm from './Pages/New Application/ApplicationFirstForm';
+import ApplicationSecondForm from './Pages/New Application/ApplicationSecondForm';
+import ApplicationThirdForm from './Pages/New Application/ApplicationThirdForm';
+import ApplicationFourthForm from './Pages/New Application/ApplicationFourthForm';
+import PDFForm from './Pages/New Application/PDFForm';
 
 
 
@@ -44,6 +51,13 @@ function App() {
           <Route path="/verificationcode" element={<Verificationcode />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/newapplication" element={<NewApplication />} />
+          <Route path="/verifyotp" element={<VerifyOtp />} />
+          <Route path="/newapplicationform" element={<NewApplicationForm />} />
+          <Route path="/applicationfirstform" element={<ApplicationFirstForm />} />
+          <Route path="/applicationsecondform" element={<ApplicationSecondForm />} />
+          <Route path="/applicationthirdform" element={<ApplicationThirdForm />} />
+          <Route path="/applicationfourthform" element={<ApplicationFourthForm />} />
+          <Route path="/pdfform" element={<PDFForm />} />
           <Route path="/emicollection" element={<EMICollection />} />
           <Route path="/users" element={<TotalUsers />} />
           <Route path="/addproduct" element={<AddProduct />} />

@@ -40,7 +40,7 @@ const NewApplication = () => {
                                 <label htmlFor="">By clicking, I accept the terms up service and privacy policy</label>
                             </div>
                             <div className='newapplication6'>
-                                <button>Generate OTP</button>
+                                <button onClick={()=>navigate('/verifyotp')}>Generate OTP</button>
                             </div>
                         </div>
                     </div>

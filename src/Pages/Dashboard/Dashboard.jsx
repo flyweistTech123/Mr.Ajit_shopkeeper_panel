@@ -8,11 +8,16 @@ import {
 } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
+
 import { IoIosArrowForward } from "react-icons/io";
 import ReactApexChart from 'react-apexcharts';
+import { OfferModel } from '../Offer Modal/OfferModal'
+
 
 
 const Dashboard = () => {
+
+
     const percentage = 70;
     const navigate = useNavigate()
     const progressData = [
@@ -180,8 +185,23 @@ const Dashboard = () => {
     }, []);
 
 
+    useEffect(() => {
+        setModalShow(true);
+    }, []);
+
+
+
+
+
+    const [modalShow, setModalShow] = React.useState(false);
+
+
     return (
         <>
+            <OfferModel
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+            />
             <div className='dashboard'>
                 <div className='dashboard1'>
                     <div className='dashboard2'>
