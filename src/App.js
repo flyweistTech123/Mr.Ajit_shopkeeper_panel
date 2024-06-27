@@ -20,7 +20,13 @@ import Settings from './Pages/Settings/Settings';
 import UserDetail from './Pages/Total Users/UserDetail';
 import FraudUserDetail from './Pages/Fraud Customer/FraudUserDetail';
 import PushNotification from './Pages/Push Notification/PushNotification';
-
+import VerifyOtp from './Pages/New Application/VerifyOtp';
+import NewApplicationForm from './Pages/New Application/NewApplicationForm';
+import ApplicationFirstForm from './Pages/New Application/ApplicationFirstForm';
+import ApplicationSecondForm from './Pages/New Application/ApplicationSecondForm';
+import ApplicationThirdForm from './Pages/New Application/ApplicationThirdForm';
+import ApplicationFourthForm from './Pages/New Application/ApplicationFourthForm';
+import PDFForm from './Pages/New Application/PDFForm';
 
 import KYC from './Pages/KYC/KYC';
 import Payment from './Pages/Payment/Payment';
@@ -29,13 +35,7 @@ import KYCDetails from './Pages/KYC/KYCDetails';
 import Walletmamagement from './Pages/Wallet/Walletmamagement';
 import Shopkeeperreportdetails from './Pages/Shopkeeper Report/Shopkeeperreportdetails';
 import CreateID from './Pages/KYC/CreateID';
-import VerifyOtp from './Pages/New Application/VerifyOtp';
-import NewApplicationForm from './Pages/New Application/NewApplicationForm';
-import ApplicationFirstForm from './Pages/New Application/ApplicationFirstForm';
-import ApplicationSecondForm from './Pages/New Application/ApplicationSecondForm';
-import ApplicationThirdForm from './Pages/New Application/ApplicationThirdForm';
-import ApplicationFourthForm from './Pages/New Application/ApplicationFourthForm';
-import PDFForm from './Pages/New Application/PDFForm';
+
 
 
 
